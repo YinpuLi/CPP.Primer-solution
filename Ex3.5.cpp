@@ -2,8 +2,8 @@
 
 using namespace std;
 
-double fraction(long long w, long long u){
-    double p;
+float fraction(long long w, long long u){
+    float p;
     p = u/w;
     return p*100;
 }
@@ -15,7 +15,7 @@ int main(){
     cout << "\nEnter the population of U.S. : ";
     cin >> u;
     
-    double p;
+    float p;
     p = fraction(w, u);
     
     cout << "\nThe population of the US is " << p << "% of the world population." << endl;
