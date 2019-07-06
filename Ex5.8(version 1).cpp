@@ -18,11 +18,12 @@ int main(){
     cout << "Enter the words (stop, type the word done): " << endl;
     int count = 0;
     string entered;
-    getline(cin, entered, ' ');
+    cin >> entered;
     while (entered != "done"){
         count  ++;
-        getline(cin, entered, ' ');
+        cin >> entered;
     }
     cout << "You entered a total of " << count << " words." << endl;
     return 0;
 }
+
