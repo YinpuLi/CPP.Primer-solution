@@ -5,12 +5,12 @@ using namespace std;
 int main(){
     cout << "Enter the words (stop, type the word done): " << endl;
     int count = 0;
-    char entered[20];
-    cin.getline(entered, 20);
+    char entered[20] = "";
+    cin >> entered;
 
     while (strcmp(entered, "done") != 0){
-        count  ++;
-        cin.getline(entered, 20);
+       count  ++;
+       cin >> entered;
     }
     cout << "You entered a total of " << count << " words." << endl;
     return 0;
